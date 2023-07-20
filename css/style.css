@@ -1,0 +1,12 @@
+/*Footer*/
+footer {
+  background-color: #2B2A2C;
+}
+footer h1, footer h2, footer h4, footer p, footer #nombre {
+  color: #FBFCF9;
+}
+footer h1 p, footer h2 p, footer h4 p, footer p p, footer #nombre p {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
