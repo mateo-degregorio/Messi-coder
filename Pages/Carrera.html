@@ -10,7 +10,7 @@
 
     <!--Conexion CSS-->
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <!--Inicio Header-->
@@ -28,13 +28,13 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#historia">Historia</a>
+                    <a class="nav-link" aria-current="page" href="../Pages/Historia.html">Historia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#carrera-profesional">Carrera Profesional</a>
+                    <a class="nav-link" href="../Pages/Carrera.html">Carrera Profesional</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#sus-logros">Sus Logros</a>
+                    <a class="nav-link" href="../Pages/Logros.html">Sus Logros</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
@@ -49,17 +49,36 @@
     </header>
     <!--Fin Header-->
 
-    <!--Inicio Video Messi-->
+    <!--Inicio Videos Messi-->
+    <section id="parrafo-intro">
+      <p>
+        En esta seccion expondremos lo que para nosotros son los mejores momentos de su carrera. Ya que las palabras no alcanzan para describirlo, decidimos dejarles algunos videos para que puedan disfrutar de su magia. Espero que puedan disfrutarlo.
+      </section>
+      <section id="Video-carrera">
+        <h3>
+          Rey del Futbol
+        </h3>
+        <p>
+          En este emocionante video podremos observar varias jugadas a lo largo de su vida. La musica de fondo emociona. 
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/p693u53Q10U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <h3>
+          Qatar 2022
+        </h3>
+        <p>
+          Que decir del mundial de Messi. Les dejo un breve resumen de sus partidos de manera ordenada. Cada vez se pone mejor.
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tJKXPNgn20Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+      </section>
+      
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/p693u53Q10U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-    <!--Fin Video Messi-->
+    <!--Fin Videos Messi-->
     
     <!--Inicio Footer-->
 
     <footer>
-
-        <hr>
 
         <section id="sobre-nosotros">
             <h4>
@@ -72,18 +91,18 @@
         
         <!--Inicio Formulario dentro de Sobre Nosotros-->
     
-            <form action="form.php" method="post">
-                <label id="nombre" for="">Nombre</label>
-                <input type="text" name="Comentarios" id="Comentarios">
-    
-                <p>Que pensas de la pagina?</p>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                
-                <p></p>
-                <input type="submit" value="Enviar">
-    
-    
-            </form>
+        <form action="form.php" method="post">
+          <div id="preguntas">
+            <label id="nombre" for="">Nombre</label>
+            <input type="text" name="Comentarios" id="Comentarios">
+            <label id="nombre" for="">Email</label>
+            <input type="text" name="Comentarios" id="Comentarios">
+          </div>
+            <p>¿Que pensas de la pagina?</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <p></p>
+            <input type="submit" value="Enviar">
+        </form>
 
     </footer>
 

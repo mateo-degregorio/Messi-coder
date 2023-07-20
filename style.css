@@ -1,7 +1,7 @@
 /*Creando CSS*/
 
 /*Header*/
-.header{
+/* .header{
   background-color: #2B2A2C;
   background-position: center;
   background-size: cover;
@@ -12,7 +12,6 @@
   left: 0;
   width: 100%;
   z-index: 100;
-
 }
 
 .header a{
@@ -29,19 +28,15 @@
 
 .nav-item{
   padding: 30px 60px 30px 60px;
-}
-
-
-
-
+} */
+/* 
 #banner{
   width:100%;
-}
-/*Sections*/
+} */
 
 /*Fonts*/
 
-h1{
+/* h1{
   font-family: 'Times New Roman', Times, serif;
   padding: 30px;
 
@@ -51,25 +46,30 @@ h3{
   font-family: 'Times New Roman', Times, serif;
   font-size: 40px;
   padding: 40px;
+} */
 
+/*Links*/
+/* a{
+  text-decoration: none;
+  color: black;
 }
 
-#Carrera-Profesional {
-  background-color: rgb(116, 143, 251);
-}
 
-img{
-  width: 100%;
-  height: 100%;
-}
+  p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  } */
 
-#historia {
+/*Sections*/
+
+
+/*Historia*/
+/* #historia {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 100px);
-  grid-gap: 10px;
+  grid-gap: 1px;
   padding: 40px;
-  max-width: 1200px;
+  max-width: 12000px;
 }
 
 #item-1 {
@@ -89,32 +89,38 @@ img{
   justify-content: center;
   align-items: center;
   object-fit: cover;
+} */
+/*Historia Pagina*/
+
+/* #parrafo-intro{
+  text-align: justify;
+  margin: 1.5rem;
 }
 
+#historia-pagina{
+  text-align: justify;
+  margin: 2rem 4rem 2rem 4rem;
+} */
+
+/*Carrera Profesional*/
+
+/* #Carrera-Profesional {
+  background-color: rgb(116, 143, 251);
+} */
+
+/* img{
+  width: 100%;
+  height: 100%;
+} */
 
 
-
-
-/*Links*/
-a{
-  text-decoration: none;
-  color: black;
-}
-
-
-  p {
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-
-#carrera-profesional{
+/* #carrera-profesional{
   display: flex;
   justify-content: center;
   align-items: top;
   gap: 1rem;
   flex-wrap: wrap;
-  background-color: #B0946E;
+  background-color: #615959;  
 }
 
 .item{
@@ -124,10 +130,10 @@ a{
 flex: 1 1 clamp(300px, 30%, 400px);
 gap: 1rem;
 padding: 30px;
+} */
 
-}
-
-#sus-logros{
+/*Sus Logros*/
+/* #sus-logros{
   display: flex;
   justify-content: center;
   align-items: top;
@@ -142,40 +148,19 @@ padding: 30px;
 flex: 1 1 clamp(300px, 30%, 400px);
 gap: 1rem;
 padding: 30px;
-}
+} */
 
-@media only screen and (max-width: 500px){
+/*Pagina Logros*/
+/* #logros-pagina{
+  text-align: justify;
+  margin: 2rem 4rem 2rem 4rem;
+} */
 
-  #historia{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .item{
-    flex-direction: column;
-  }
-  }
-
-@media only screen and (min-width:500px) and (max-width: 960px) {
-
-#historia{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.item{
-  flex-direction: column;
-}
-}
 
 
   /*Footer*/
 
-  footer h1{
-    color: #FBFCF9;
-  }
-
-  footer h2{
+  /* footer h1,h2,h4{
     color: #FBFCF9;
   }
 
@@ -190,11 +175,48 @@ padding: 30px;
   }
 
 
-  footer{
+  #sobre-nosotros{
+    padding: 3rem;
     background-color: #2B2A2C;
   }
 
+  textarea{
+    width: 800px;
+    height: 150px;
+  }
+  #preguntas{
+display: flex;
+gap: 2rem;
+  } */
 
+
+  /*Fin Footer*/
+
+  /*Media Query*/
+  /* @media only screen and (max-width: 500px){
+
+    #historia{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .item{
+      flex-direction: column;
+    }
+    }
+  
+  @media only screen and (min-width:500px) and (max-width: 960px) {
+  
+  #historia{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item{
+    flex-direction: column;
+  }
+  }
+ */
 
 
 

@@ -9,9 +9,9 @@
 
     <!--Conexion CSS-->
 
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+<body>  
     
     <!--Inicio Header-->
     <header class="header">
@@ -28,18 +28,18 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#historia">Historia</a>
+                    <a class="nav-link" aria-current="page" href="../Pages/Historia.html">Historia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#carrera-profesional">Carrera Profesional</a>
+                    <a class="nav-link" href="../Pages/Carrera.html">Carrera Profesional</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#sus-logros">Sus Logros</a>
+                    <a class="nav-link" href="../Pages/Logros.html">Sus Logros</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
                   </li>
-                </ul>
+                  </ul>
               </div>
             </div>
           </nav>
@@ -50,18 +50,29 @@
     </header>
     <!--Fin Header-->
 
-<section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odio itaque quis error quod praesentium molestiae voluptates asperiores dolores? Aliquam, quis? Esse amet culpa facere dolorem ratione, beatae veritatis quasi?
-
+<section id="logros-pagina">
+    <p>
+      Lionel Messi ha acumulado una impresionante lista de logros a lo largo de su carrera futbolística. Sus éxitos son testamento de su increíble talento y dedicación al deporte. Desde sus inicios en el FC Barcelona hasta su paso por la selección argentina, Messi ha dejado una marca imborrable en la historia del fútbol.
     </p>
+    <p>
+      En el Barcelona, Messi se convirtió en el máximo goleador de todos los tiempos del club, superando récords que se creían inalcanzables. Durante su tiempo en el equipo, ganó múltiples títulos de La Liga, llevando al Barcelona a la cima del fútbol español en numerosas ocasiones. También desempeñó un papel crucial en la conquista de la Liga de Campeones de la UEFA, la competición de clubes más prestigiosa de Europa. Su habilidad para marcar goles, su regate imparable y su capacidad para desequilibrar cualquier defensa lo convirtieron en una pesadilla para los oponentes y en un ídolo para los aficionados.
+    </p>
+    <p>
+      A nivel individual, Messi ha ganado el Balón de Oro en múltiples ocasiones, un premio que reconoce al mejor jugador del mundo. Su capacidad para marcar goles, crear oportunidades para sus compañeros de equipo y liderar en el campo lo han convertido en una fuerza dominante y en un referente para jugadores de todas las generaciones. Ha recibido numerosos premios individuales, incluyendo el premio al Mejor Jugador de la UEFA y el premio FIFA World Player.
+    </p>
+    <p>
+      Además de su éxito en el Barcelona, Messi ha dejado su huella en la selección argentina. Aunque su camino con el equipo nacional no ha estado exento de críticas y presiones, Messi llevó a Argentina a la final de la Copa del Mundo de la FIFA en 2014 y finalmente consiguió su primer título con la selección argentina al ganar la Copa América en 2021. Estas victorias fueron momentos históricos para el fútbol argentino y demostraron el liderazgo y la influencia de Messi en el equipo.
+    </p>
+    <p>
+      Más allá de los títulos y los premios, Messi ha dejado una profunda impresión en el fútbol. Su estilo de juego único, su visión de juego excepcional y su capacidad para superar a los defensores con facilidad han cautivado a millones de aficionados en todo el mundo. Messi ha inspirado a generaciones de jugadores jóvenes a seguir sus sueños y ha dejado un legado de excelencia en el deporte.
+    </p>
+
 </section>
 
 
     <!--Inicio Footer-->
 
     <footer>
-
-        <hr>
 
         <section id="sobre-nosotros">
             <h4>
@@ -74,18 +85,18 @@
         
         <!--Inicio Formulario dentro de Sobre Nosotros-->
     
-            <form action="form.php" method="post">
-                <label id="nombre" for="">Nombre</label>
-                <input type="text" name="Comentarios" id="Comentarios">
-    
-                <p>Que pensas de la pagina?</p>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                
-                <p></p>
-                <input type="submit" value="Enviar">
-    
-    
-            </form>
+        <form action="form.php" method="post">
+          <div id="preguntas">
+            <label id="nombre" for="">Nombre</label>
+            <input type="text" name="Comentarios" id="Comentarios">
+            <label id="nombre" for="">Email</label>
+            <input type="text" name="Comentarios" id="Comentarios">
+          </div>
+            <p>¿Que pensas de la pagina?</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <p></p>
+            <input type="submit" value="Enviar">
+        </form>
 
     </footer>
 

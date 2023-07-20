@@ -1,0 +1,85 @@
+p {
+    font-size: $font-size-small;
+    font-family: $font-primary;
+    color: $color-secondary;
+    }
+
+/*Historia*/
+#historia {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    padding: 40px;
+    max-width: 12000px;
+  }
+
+  #item-1 {
+    @include grid(1/2,1/2);
+
+  }
+  
+  #item-2 {
+    @include grid(1/3,2/4);
+  }
+  
+  #item-3 {
+    @include grid(3/5,1/4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+  }
+
+  /*Carrera Profesional*/
+
+#Carrera-Profesional {
+    background-color: rgb(116, 143, 251);
+  }
+
+  #carrera-profesional{
+    @include flex (null, center, top ,1rem,wrap);
+    background-color: #615959;  
+  }
+  
+  .item{
+    @include flex (null, null, top ,1rem,null);
+  flex: 1 1 clamp(300px, 30%, 400px);
+  padding: 30px;
+  }
+
+  
+/*Sus Logros*/
+#sus-logros{
+    @include flex (null, center, top ,1rem,wrap);
+  }
+  
+  .item{
+    @include flex (null, null, top ,1rem,null);
+  flex: 1 1 clamp(300px, 30%, 400px);
+  padding: 30px;
+  }
+  
+  @media only screen and (max-width: 500px){
+
+    #historia{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .item{
+      flex-direction: column;
+    }
+    }
+  
+  @media only screen and (min-width:500px) and (max-width: 960px) {
+  
+  #historia{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item{
+    flex-direction: column;
+  }
+  }
+

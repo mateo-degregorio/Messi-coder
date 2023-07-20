@@ -1,15 +1,27 @@
-
   /*Footer*/
-  footer{
-    background-color: $color-secondary;
-h1,h2,h4,p,#nombre{
-    color: $color-primary;
-    p{
-        font-size: $font-size-small;
-        
-
-      }}
+footer,h4,p,#nombre{
+    color:$color-primary;
   }
+
+
+  footer p{
+    font-size: $font-size-small;
+  }
+
+
+  #sobre-nosotros{
+    padding: 3rem;
+    background-color: $color-secondary;
+  }
+
+  textarea{
+    width: 800px;
+    height: 150px;
+  }
+
+  #preguntas{
+    @include flex (null, null, null ,2rem,null);
+    }
 
 
 
