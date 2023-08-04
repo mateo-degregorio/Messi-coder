@@ -22,6 +22,22 @@ p {
       font-size: 50px;
       margin-bottom: 10px;
     }
+
+    @media only screen and (max-width: 500px){
+      .texto-encima {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: $color-secondary; /* Color del texto */
+        padding: 40px;
+      }
+      .texto-encima h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      }
     
     
 
@@ -41,24 +57,38 @@ p {
   /*Carrera Profesional*/
 
   #carrera-profesional{
-    @include flex (null,top, top ,4rem,null);
+    @include flex (null,top, top ,4rem,wrap);
+    max-width: 100%;
     background-color: $color-secondary;  
     padding: 80px 20px 80px 20px;
   }
   
   .carrera-profesional-item{
     @include flex (column,left,left,1rem,null);
-  flex: 1 1 clamp(300px, 30%, 400px);
   margin: 0px 30px;
+  flex: 1 1 clamp(300px, 30%, 400px);
 }
 
   .carrera-profesional-item2 {
     color: $color-primary;
+    flex: 1 1 clamp(300px, 30%, 400px);
   }
 
 .img-carrera{
   width: 50%;
 }
+
+@media only screen and (max-width: 500px){
+  #carrera-profesional{
+    @include flex (column-reverse,top, top ,4rem,wrap);
+    max-width: 100%;
+    background-color: $color-secondary;  
+    padding: 80px 20px 80px 20px;
+    .img-carrera{
+      width: 80%;
+    }
+  }
+  }
   
 /*Sus Logros*/
 #sus-logros{
