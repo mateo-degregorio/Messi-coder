@@ -120,6 +120,7 @@ textarea {
   flex-direction: column;
   justify-content: top;
   align-items: center;
+  width: 100%;
 }
 
 @media only screen and (max-width: 960px) {
@@ -206,6 +207,21 @@ p {
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 500px) {
+  .texto-encima {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #2B2A2C; /* Color del texto */
+    padding: 40px;
+  }
+  .texto-encima h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
 /*Historia*/
 #historia {
   display: flex;
@@ -229,6 +245,8 @@ p {
   justify-content: top;
   align-items: top;
   gap: 4rem;
+  flex-wrap: wrap;
+  max-width: 100%;
   background-color: #2B2A2C;
   padding: 80px 20px 80px 20px;
 }
@@ -239,18 +257,35 @@ p {
   justify-content: left;
   align-items: left;
   gap: 1rem;
-  flex: 1 1 clamp(300px, 30%, 400px);
   margin: 0px 30px;
+  flex: 1 1 clamp(300px, 30%, 400px);
 }
 
 .carrera-profesional-item2 {
   color: #FBFCF9;
+  flex: 1 1 clamp(300px, 30%, 400px);
 }
 
 .img-carrera {
   width: 50%;
 }
 
+@media only screen and (max-width: 500px) {
+  #carrera-profesional {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: top;
+    align-items: top;
+    gap: 4rem;
+    flex-wrap: wrap;
+    max-width: 100%;
+    background-color: #2B2A2C;
+    padding: 80px 20px 80px 20px;
+  }
+  #carrera-profesional .img-carrera {
+    width: 80%;
+  }
+}
 /*Sus Logros*/
 #sus-logros {
   display: flex;
