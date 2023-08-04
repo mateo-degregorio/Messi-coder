@@ -21,10 +21,12 @@
   }
   
   .navbar-brand{
-    padding: 30px 30px 30px 50px;
+    padding: 10px 30px 10px 50px;
   }
   
   .nav-item{
-    padding: 30px 60px 30px 60px;
+    padding: 2px 60px 2px 60px;
   }
-  
+  .navbar-toggler-icon {
+    filter: invert(1);
+}
