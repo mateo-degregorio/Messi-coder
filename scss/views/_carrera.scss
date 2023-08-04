@@ -1,0 +1,61 @@
+/*Carrera Pagina*/
+
+#parrafo-intro{
+    margin: 0px;
+}
+
+
+#carrera-article{
+    @include flex (column,center, center,5rem,wrap);
+    max-width: 1200px;
+    margin: 2rem;
+}
+
+.video-carrera{
+    @include flex (null,top, top ,7rem,null);
+    flex: 1 1 clamp(300px, 30%, 400px);
+}
+
+.video-carrera-2{
+    @include flex (row-reverse,top, top ,7rem,null);
+    flex: 1 1 clamp(300px, 30%, 400px);
+}
+
+.video-carrera-item{
+    @include flex (column,top, center,null,null);
+}
+
+@media only screen and (max-width: 960px){
+
+    .video-carrera{
+        @include flex (column,top, top ,7rem,null);
+        flex: 1 1 clamp(300px, 30%, 400px);
+    &-2{
+            @include flex (column,top, top ,7rem,null);
+            flex: 1 1 clamp(300px, 30%, 400px);
+        }}
+
+    }
+
+iframe{
+    width: 100%;
+}
+
+#section-estadisticas{
+padding: 2rem;
+    }
+
+#p-estadisticas{
+columns: 2;
+column-gap: 2rem;
+}
+
+.h3-estadisticas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #section-gol{
+        padding: 2rem;
+    }

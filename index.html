@@ -8,7 +8,9 @@
 
     <!--Conexion CSS-->
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--Titulo tab-->
     <title>Blog Messi</title>
@@ -51,28 +53,31 @@
     </header>
     <!--Fin Header-->
 
-
-    <div id="banner">
-      <img src="Images/messi.jpg" alt="Foto Portada de Messi" class="logo">
-    </div>
-
-
-<h1>Blog Lionel Messi</h1>
-
+<div class="image-container">
+  <img src="Images/messi.jpg" alt="Foto Portada de Messi" class="logo">
+  <div class="texto-encima">
+    <h1>Blog Lionel Andres Messi</h1>
+  </div>
+</div>
 
     <!--Inicio Section Historia-->
-    <section id="historia">
-<h3 id="item-1" class="item">
+    <section id="historia" >
+
+      <div class="historia-item">
+        <h3 class="item">
         <a href="Pages/Historia.html">
-        Historia
+        Su historia
         </a>
     </h3>
 
         <p id="item-2" class="item"> 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex enim ad dolorem unde recusandae assumenda, sint blanditiis aperiam doloribus? Accusantium, culpa repellat harum mollitia voluptatem corporis veritatis sit aliquid!
-        </p>
+          Lionel Andrés Messi Cuccittini, conocido comúnmente como Lionel Messi o simplemente Leo Messi, es un futbolista argentino nacido el 24 de junio de 1987 en Rosario, Argentina. Es ampliamente considerado como uno de los mejores jugadores de fútbol de todos los tiempos debido a sus impresionantes habilidades y logros en el campo.
+<br>
+          Messi es especialmente reconocido por su excepcional paso por el Fútbol Club Barcelona, donde se convirtió en una leyenda y dejó una huella imborrable. Durante su tiempo en el Barcelona, ganó innumerables títulos, incluyendo numerosas Ligas, Copas del Rey, Ligas de Campeones de la UEFA y Balones de Oro, galardón que ha ganado en varias ocasiones.
+                  </p>
+      </div>
 
-        <img id="item-3" src="Images/Messi historia.jfif" class="item">
+        <img id="item-3" src="Images/joven2.jpg" class="item"data-aos="flip-left" data-aos-duration="1000">
     </section>
 
     <!--Fin Section Historia-->
@@ -81,19 +86,23 @@
 
     <section id="carrera-profesional">
         
-        <h3 class="item">
-        <a href="Pages/Carrera.html">
+        <img src="Images/Messi Carrera Prof.jpg" class="img-carrera">
+      
+      <div class="carrera-profesional-item">
+
+        <h3>
+        <a class="carrera-profesional-item2" href="Pages/Carrera.html">
             Carrera Profesional
         </a>
     </h3>
 
-
-
-        <p class="item">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex enim ad dolorem unde recusandae assumenda, sint blanditiis aperiam doloribus? Accusantium, culpa repellat harum mollitia voluptatem corporis veritatis sit aliquid!
+        <p class="carrera-profesional-item2">
+          Si bien ya estuvimos recorriendo los hitos y estadisticas de Lionel Messi a lo largo del blog, creemos que no es suficiente para comprender su grandeza. Es por eso que esta seccion estara unicamente dedicada al disfrute visual. En la misma expondremos, a traves de videos, lo que para nosotros son los mejores momentos de la carrera del 10. Hagan click y empecemos a disfrutar de el mejor jugador de todos los tiempos. Sabemos que una imagen vale mas que mil palabras, va en este caso un video.
         </p>
 
-        <img item src="Images/Messi Carrera Prof.jpg">
+      </div>
+
+
     </section>
 
     <!--Fin Section Carrera Profesional-->
@@ -101,17 +110,19 @@
     <!--Inicio Section Titulos y Logros-->
 
     <section id="sus-logros">
-    <h3 class="item">
+    
+      <div class="logros-item">
+      <h3>
         <a href="Pages/Logros.html">
         Sus logros
         </a>
     </h3>
-
-        <p class="item">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex enim ad dolorem unde recusandae assumenda, sint blanditiis aperiam doloribus? Accusantium, culpa repellat harum mollitia voluptatem corporis veritatis sit aliquid!
+        <p>
+          Lionel Messi es considerado uno de los mejores futbolistas de todos los tiempos. Ha ganado numerosos títulos con el FC Barcelona, incluyendo La Liga y la Liga de Campeones de la UEFA. Además, ha recibido múltiples Balones de Oro como mejor jugador del mundo. Con la selección argentina, lideró al equipo a ganar la final de la Copa America en 2021 y la tan esperada Copa del Mundo en 2022. Su habilidad y logros en el fútbol han dejado una marca imborrable en la historia del deporte.
         </p>
+      </div>
 
-        <img class="item" src="Images/Messi Logros.jpg">
+        <img class="img-logros" src="Images/Messi Logros.jpg" data-aos="zoom-in-left" data-aos-duration="1000">
     </section>
 
     <!--Fin Section Titulos y Logros-->
@@ -121,8 +132,6 @@
     <!--Inicio Footer-->
 
     <footer>
-
-        <hr>
 
         <section id="sobre-nosotros">
             <h4>
@@ -135,17 +144,20 @@
         
         <!--Inicio Formulario dentro de Sobre Nosotros-->
     
-            <form action="form.php" method="post">
-                <label id="nombre" for="">Nombre</label>
-                <input type="text" name="Comentarios" id="Comentarios">
-    
-                <p>Que pensas de la pagina?</p>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="Enviar">
-    
-    
-            </form>
+        <form action="form.php" method="post">
+          <div id="preguntas">
+            <label id="nombre" for="">Nombre</label>
+            <input type="text" name="Comentarios" id="Comentarios">
+            <label id="nombre" for="">Email</label>
+            <input type="text" name="Comentarios" id="Comentarios">
+          </div>
+            <p>¿Que pensas de la pagina?</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <p></p>
+            <input type="submit" value="Enviar">
+        </form>
 
+          </section>
     </footer>
 
     <!--Fin Footer-->
@@ -154,11 +166,15 @@
     <!--Fin Section Sobre Nosotros-->
 
 
-    </section>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>           
 </html>

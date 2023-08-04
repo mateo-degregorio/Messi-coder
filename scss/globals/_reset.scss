@@ -1,0 +1,30 @@
+
+/*Fonts*/
+
+h1{
+    font-family: $font-primary;
+    padding: 10px;
+  
+  }
+  
+  h3{
+    font-family: $color-secondary;
+    font-size: $font-size-large;
+    padding: 10px;
+  }
+  
+  /*Links*/
+  a{
+    text-decoration: none;
+    color: $color-secondary;
+  }
+
+
+    img{
+        width: 70%;
+      }
+
+      .logo{
+        width: 100%;
+      }
+      

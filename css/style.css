@@ -1,0 +1,300 @@
+/*Fonts*/
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+}
+
+h3 {
+  font-family: #2B2A2C;
+  font-size: 3rem;
+  padding: 10px;
+}
+
+/*Links*/
+a {
+  text-decoration: none;
+  color: #2B2A2C;
+}
+
+img {
+  width: 70%;
+}
+
+.logo {
+  width: 100%;
+}
+
+/*Footer*/
+footer, h4, p, #nombre {
+  color: #FBFCF9;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+#sobre-nosotros {
+  padding: 3rem;
+  background-color: #2B2A2C;
+}
+
+textarea {
+  width: 800px;
+  height: 150px;
+}
+
+#preguntas {
+  display: flex;
+  gap: 2rem;
+}
+
+/*Header*/
+.header {
+  background-color: #2B2A2C;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header a {
+  font-family: "Times New Roman", Times, serif;
+  font-style: bold;
+  font-size: 1.3rem;
+  color: #FBFCF9;
+  align-items: center;
+}
+
+.navbar-brand {
+  padding: 10px 30px 10px 50px;
+}
+
+.nav-item {
+  padding: 2px 60px 2px 60px;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/*Carrera Pagina*/
+#parrafo-intro {
+  margin: 0px;
+}
+
+#carrera-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 2rem;
+}
+
+.video-carrera {
+  display: flex;
+  justify-content: top;
+  align-items: top;
+  gap: 7rem;
+  flex: 1 1 clamp(300px, 30%, 400px);
+}
+
+.video-carrera-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: top;
+  align-items: top;
+  gap: 7rem;
+  flex: 1 1 clamp(300px, 30%, 400px);
+}
+
+.video-carrera-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+@media only screen and (max-width: 960px) {
+  .video-carrera {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: top;
+    gap: 7rem;
+    flex: 1 1 clamp(300px, 30%, 400px);
+  }
+  .video-carrera-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: top;
+    gap: 7rem;
+    flex: 1 1 clamp(300px, 30%, 400px);
+  }
+}
+iframe {
+  width: 100%;
+}
+
+#section-estadisticas {
+  padding: 2rem;
+}
+
+#p-estadisticas {
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.h3-estadisticas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-gol {
+  padding: 2rem;
+}
+
+/*Historia Pagina*/
+#parrafo-intro {
+  text-align: justify;
+  margin: 1.5rem;
+}
+
+#historia-pagina {
+  text-align: justify;
+  margin: 2rem 4rem 2rem 4rem;
+}
+
+/*Pagina Logros*/
+#logros-pagina {
+  text-align: justify;
+  margin: 2rem 4rem 2rem 4rem;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  color: #2B2A2C;
+}
+
+/*banner*/
+.image-container {
+  position: relative;
+}
+
+.texto-encima {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #2B2A2C; /* Color del texto */
+  padding: 20px;
+}
+
+.texto-encima h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+/*Historia*/
+#historia {
+  display: flex;
+  justify-content: top;
+  align-items: top;
+  margin: 0px 30px;
+  max-width: 12000px;
+  padding: 80px 20px 20px 20px;
+}
+
+.historia-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding: 10px 20px 20px 20px;
+}
+
+/*Carrera Profesional*/
+#carrera-profesional {
+  display: flex;
+  justify-content: top;
+  align-items: top;
+  gap: 4rem;
+  background-color: #2B2A2C;
+  padding: 80px 20px 80px 20px;
+}
+
+.carrera-profesional-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  gap: 1rem;
+  flex: 1 1 clamp(300px, 30%, 400px);
+  margin: 0px 30px;
+}
+
+.carrera-profesional-item2 {
+  color: #FBFCF9;
+}
+
+.img-carrera {
+  width: 50%;
+}
+
+/*Sus Logros*/
+#sus-logros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: top;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 35px;
+}
+
+.logros-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 1 clamp(300px, 30%, 400px);
+  padding: 20px 60px;
+}
+
+.img-logros {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+  #historia {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 960px) {
+  #historia {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

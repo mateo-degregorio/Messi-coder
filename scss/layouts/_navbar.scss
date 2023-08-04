@@ -1,0 +1,32 @@
+/*Header*/
+.header{
+    background-color: $color-secondary;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .header a{
+    font-family: $font-primary;
+    font-style: bold;
+    font-size: $font-size-medium;
+    color:$color-primary;
+    align-items: center;
+  }
+  
+  .navbar-brand{
+    padding: 10px 30px 10px 50px;
+  }
+  
+  .nav-item{
+    padding: 2px 60px 2px 60px;
+  }
+  .navbar-toggler-icon {
+    filter: invert(1);
+}
